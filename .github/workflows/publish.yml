@@ -27,4 +27,4 @@ jobs:
       - run: |
           npx can-npm-publish --verbose && npm publish || echo "Does not publish"
         env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          NPM_TOKEN: ${{secrets.GITHUB_TOKEN}}
